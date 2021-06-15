@@ -1,5 +1,11 @@
 //обнуление стилей
 @import url('./layout/nullstyle/nullstyle.scss');
 
+//font-types
+@import url('./layout/types/types.scss');
+
+//inputs
+@import url('./project/form-elements/input/input.scss');
+
 
 @import url('./layout/wrapper/wrapper.scss');
