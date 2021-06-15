@@ -1,0 +1,26 @@
+{
+  "name": "hotel-number-find",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "dart-sass": "^1.25.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "pug": "^3.0.1",
+    "pug-html-loader": "^1.1.5",
+    "sass": "^1.35.0",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.39.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
