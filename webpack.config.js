@@ -21,7 +21,15 @@ const sass = {
     use: [
         MiniCssExtractPlugin.loader,
         'css-loader',
-        'sass-loader',
+        {
+            loader: "sass-loader",
+            // options: {
+            //   sassOptions: {
+            //     indentWidth: 4,
+            //     includePaths: ["./src/layout/coors/color",],
+            //   },
+            // },
+        },
     ]
 };
 
