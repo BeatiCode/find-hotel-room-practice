@@ -1,8 +1,23 @@
-label {
-    margin-top: 20px;
-    margin-left: 10px;
-    border: 1px solid #C7C7CF;
-    width: 320px;
-    height: 44px;
-    border-radius: 4px;
+@use '../../../layout/colors/colors' as colors;
+
+.input {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    max-width: 320px;
+    .input__text{
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    label {
+        border: 1px solid colors.$color-dark-shade25;
+        padding: 13px 15px 13px 15px;
+        border-radius: 4px;
+    }
+    input {
+        width: 100%;
+    }
 }
+

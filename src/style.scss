@@ -1,11 +1,15 @@
 //обнуление стилей
-@import url('./layout/nullstyle/nullstyle.scss');
+@use './layout/nullstyle/nullstyle.scss';
 
 //font-types
-@import url('./layout/types/types.scss');
+@use './layout/types/types.scss';
 
 //inputs
-@import url('./project/form-elements/input/input.scss');
+@use'./project/form-elements/input/input';
 
 
-@import url('./layout/wrapper/wrapper.scss');
+@use './layout/wrapper/wrapper.scss';
+
+body {
+    margin: 20px;
+}
