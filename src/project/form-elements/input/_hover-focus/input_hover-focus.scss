@@ -1,0 +1,10 @@
+@use '../../../../layout/colors/colors' as colors;
+@mixin hover-focus{
+    &:focus {
+        border-color: colors.$color-dark-shade50;
+        color: colors.$color-dark-shade75;
+    }
+    &:hover{
+        border-color: colors.$color-dark-shade50;
+    }
+}

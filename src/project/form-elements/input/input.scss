@@ -1,4 +1,5 @@
 @use '../../../layout/colors/colors' as colors;
+@use '../input/_hover-focus/input_hover-focus.scss';
 
 .input {
     display: flex;
@@ -11,13 +12,14 @@
         font-weight: 700;
         margin-bottom: 5px;
     }
-    label {
-        border: 1px solid colors.$color-dark-shade25;
-        padding: 13px 15px 13px 15px;
-        border-radius: 4px;
-    }
     input {
         width: 100%;
+        color: colors.$color-dark-shade25;
+        border: 1px solid colors.$color-dark-shade25;
+        padding: 13px 15px;
+        border-radius: 4px;
+        @include input_hover-focus.hover-focus;
     }
+
 }
 
