@@ -1,3 +1,4 @@
+@use '../colors/colors';
 * {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -15,4 +16,25 @@ h2{
 
 h3{
     font-size: 17px;
+}
+
+input {
+    color: colors.$color-dark-shade25;
+    border: 1px solid colors.$color-dark-shade25;
+    padding: 13px 15px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.title-form {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
