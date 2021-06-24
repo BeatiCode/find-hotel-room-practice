@@ -4,11 +4,12 @@
 //font-types
 @use './layout/types/types.scss';
 
-//inputs
-@use'./project/form-elements/input/input';
-
-
 @use './layout/wrapper/wrapper.scss';
+
+//inputs test
+@use './project/form-elements/input/input';
+//dropdown test
+@use './project/form-elements/dropdown/dropdown';
 
 body {
     margin: 20px;

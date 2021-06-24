@@ -1,6 +1,10 @@
+include project/form-elements/input/input.pug
+include project/form-elements/dropdown/dropdown
+
 doctype html
 
 html(lang="ru")
     include layout/head/head.pug
     body
-        include project/form-elements/input/input.pug
+        +dropdown("Dropdown", "Сколько гостей")
+        +input("Input", "Email")
