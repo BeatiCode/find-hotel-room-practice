@@ -1,7 +1,7 @@
-mixin dropdown(title, placeholder)
+mixin dropdown(title, text)
     .dropdown.dropdown_hover-focus
-        .dropdown.title-form= title
-        .select 
-            .dropdown__placeholder= placeholder
+        .dropdown__title.title-form= title
+        .dropdown-select 
+            .dropdown-select__text= text
             .dropdown__arrow
                 .arrow.down

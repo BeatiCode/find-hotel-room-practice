@@ -5,7 +5,7 @@
 
 .dropdown {
     @extend .input;
-    .select {
+    &-select {
         color: colors.$color-dark-shade75;
         border: 1px solid colors.$color-dark-shade25;
         padding: 13px 15px;
@@ -14,11 +14,8 @@
         justify-content: space-between;
         cursor: pointer;
         @include hover-focus.hover-focus
-        // &:hover {
-        //     border-color: colors.$color-dark-shade50;
-        // }
-    }     
-    &__placeholder {
+    }
+    &-select__text{
         flex: 0 1 50%;
     }
     &__arrow {
