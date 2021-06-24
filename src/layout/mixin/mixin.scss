@@ -1,0 +1,7 @@
+//инпут и дроп
+
+@mixin input-drop($maxwidth: 320px) {
+    display: flex;
+    flex-direction: column;
+    max-width: $maxwidth;
+}
