@@ -1,10 +1,9 @@
 @use '../../../../layout/colors/colors' as colors;
 @mixin hover-focus{
-    &_hover-focus:hover{
+    &:hover{
         border-color: colors.$color-dark-shade50;
     }
-    &_hover-focus:focus {
+    &:focus {
         @extend :hover;
-        color: colors.$color-dark-shade75;
     }
 }
