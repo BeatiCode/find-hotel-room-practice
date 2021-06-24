@@ -11,7 +11,11 @@
 }
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
-
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 nav,footer,header,aside{display: block;}
 
 html,body{
