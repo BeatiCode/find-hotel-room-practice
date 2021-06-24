@@ -2,7 +2,7 @@
   "name": "hotel-number-find",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": "true",
   "scripts": {
     "dev": "webpack --watch --mode development",
     "prod": "webpack --mode production"
