@@ -1,6 +1,7 @@
 @use '../../../layout/colors/colors';
 @use '../../figures/arrow/arrow.scss';
 @use '../input/input.scss';
+@use '../../../layout/mixin/_hover-focus/hover-focus';
 
 .dropdown {
     @extend .input;
@@ -12,9 +13,10 @@
         display: flex;
         justify-content: space-between;
         cursor: pointer;
-        &:hover {
-            border-color: colors.$color-dark-shade50;
-        }
+        @include hover-focus.hover-focus
+        // &:hover {
+        //     border-color: colors.$color-dark-shade50;
+        // }
     }     
     &__placeholder {
         flex: 0 1 50%;

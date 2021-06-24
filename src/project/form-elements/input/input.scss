@@ -1,5 +1,5 @@
 @use '../../../layout/colors/colors';
-@use '../input/_hover-focus/input_hover-focus.scss';
+@use '../../../layout/mixin/_hover-focus/hover-focus';
 @use '../../../layout/mixin/mixin.scss';
 
 input {
@@ -11,7 +11,7 @@ input {
     &::placeholder{
         color: colors.$color-dark-shade25;
     }
-    @include input_hover-focus.hover-focus;
+    @include hover-focus.hover-focus;
 }
 
 .input {
