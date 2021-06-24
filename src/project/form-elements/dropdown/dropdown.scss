@@ -1,0 +1,28 @@
+@use '../../../layout/colors/colors';
+@use '../../figures/arrow/arrow.scss';
+@use '../input/input.scss';
+
+.dropdown {
+    @extend .input;
+    .select {
+        color: colors.$color-dark-shade75;
+        border: 1px solid colors.$color-dark-shade25;
+        padding: 13px 15px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        &:hover {
+            border-color: colors.$color-dark-shade50;
+        }
+    }     
+    &__placeholder {
+        flex: 0 1 50%;
+    }
+    &__arrow {
+        line-height: normal;
+        text-align: right;
+        flex: 0 1 50%;
+    }
+}
+@include arrow.arrow-down
