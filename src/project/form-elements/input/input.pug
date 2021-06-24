@@ -1,4 +1,5 @@
-.input 
-    .input__text test text
-    label(for="")
-        input(type="email" placeholder="Email").input_hover-focus
+mixin input(title, placeholder)
+    .input
+        .input.title-form= title
+        label(for="")
+            input(type="email" placeholder= placeholder).input_hover-focus
