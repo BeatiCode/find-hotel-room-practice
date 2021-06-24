@@ -1,25 +1,9 @@
-@use '../../../layout/colors/colors' as colors;
+@use '../../../layout/colors/colors';
 @use '../input/_hover-focus/input_hover-focus.scss';
+@use '../../../layout/mixin/mixin.scss';
 
 .input {
-    display: flex;
-    flex-direction: column;
-    text-transform: uppercase;
-    max-width: 320px;
-    .input__text{
-        font-size: 12px;
-        line-height: 15px;
-        font-weight: 700;
-        margin-bottom: 5px;
-    }
-    input {
-        width: 100%;
-        color: colors.$color-dark-shade25;
-        border: 1px solid colors.$color-dark-shade25;
-        padding: 13px 15px;
-        border-radius: 4px;
-        @include input_hover-focus.hover-focus;
-    }
-
+@include mixin.input-drop;
+    @include input_hover-focus.hover-focus;
 }
 
