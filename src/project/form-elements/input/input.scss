@@ -15,6 +15,6 @@ input {
 }
 
 .input {
-@include mixin.input-drop;
+@include mixin.input-drop-flexible;
 }
 
