@@ -1,0 +1,24 @@
+@use '../dropdown/dropdown.scss';
+@use '../input/input.scss';
+@use '../../figures/arrow/arrow.scss';
+@use '../../../layout/colors/colors';
+@use '../../../layout/mixin/mixin.scss';
+
+.date-dropdown{
+    @include mixin.input-drop-flexible(150px);
+    text-transform: uppercase;
+    flex: 0 0 150px; //флекс и марджин для нескольких значений дат, нужно вложить в отдельный класс для правильности оттображения
+    margin-right: 20px;
+    &:last-child {
+        margin-right: 0;
+    }
+    &-select {
+        @extend .dropdown-select;
+    }
+    &-select__text{
+        @extend .dropdown-select__text;
+    }
+    &__arrow {
+        @extend .dropdown__arrow;
+    }
+}
