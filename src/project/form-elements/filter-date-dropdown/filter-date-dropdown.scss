@@ -1,0 +1,18 @@
+@use '../dropdown/dropdown.scss';
+@use '../input/input.scss';
+@use '../../figures/arrow/arrow.scss';
+@use '../../../layout/colors/colors';
+@use '../../../layout/mixin/mixin.scss';
+
+.filter-date-dropdown{
+    @include mixin.input-drop-flexible(266px);
+    &-select {
+        @extend .dropdown-select;
+    }
+    &-select__text{
+        @extend .dropdown-select__text;
+    }
+    &__arrow {
+        @extend .dropdown__arrow;
+    }
+}
