@@ -1,20 +1,21 @@
 @use '../../../layout/colors/colors';
 @use '../../../layout/mixin/_hover-focus/hover-focus';
 @use '../../../layout/mixin/mixin.scss';
-
 input {
-    color: colors.$color-dark-shade75;
-    border: 1px solid colors.$color-dark-shade25;
-    padding: 13px 15px;
-    border-radius: 4px;
-    width: 100%;
-    &::placeholder{
-        color: colors.$color-dark-shade25;
-    }
-    @include hover-focus.hover-focus;
+    width: inherit;
 }
-
 .input {
-@include mixin.input-drop-flexible;
+  @include mixin.input-drop-flexible;
 }
 
+.text-enter {
+  color: colors.$color-dark-shade75;
+  border: 1px solid colors.$color-dark-shade25;
+  padding: 13px 15px;
+  border-radius: 4px;
+  width: 100%;
+  &::placeholder {
+    color: colors.$color-dark-shade25;
+  }
+  @include hover-focus.hover-focus;
+}

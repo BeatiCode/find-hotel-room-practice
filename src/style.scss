@@ -6,11 +6,24 @@
 
 @use './layout/wrapper/wrapper.scss';
 
-//inputs test
-@use './project/form-elements/input/input';
+@use './project/form-elements/title-form/title-form.scss';
+
 //dropdown test
 @use './project/form-elements/dropdown/dropdown';
+//input
+@use './project/form-elements/input/input.scss';
+//subscript
+@use './project/form-elements/subscription/subscription.scss';
+
+//date dropdown
+// @use './project/form-elements/date-dropdown/date-dropdown.scss';
+// @use './project/form-elements/filter-date-dropdown/filter-date-dropdown.scss';
+
 
 body {
-    margin: 20px;
+  margin: 20px;
+}
+
+.date {
+  display: flex;
 }
