@@ -1,0 +1,19 @@
+@use '../../../layout/colors/colors';
+
+.subscription {
+  max-width: 266px;
+  .input__title {
+  }
+  .text-enter {
+    display: flex;
+    align-items: center;
+    input[type="email"] {
+    }
+    input[type="submit"] {
+      width: 20px;
+      height: 20px;
+      border: none;
+      background: url(../../../icon/arrow-forward.png) no-repeat 50% 50%;
+    }
+  }
+}
